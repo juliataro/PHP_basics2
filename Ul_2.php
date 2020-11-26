@@ -36,9 +36,5 @@ echo "<br><br>On antud täisnurkse kolmnurk, kus a=6.35 b=4.00 c=7.50. Leiame pi
 echo "<br>Pindala on ".$formatted1." ja ümbermõõt on ".$formatted2;
 
 
-
-
-
-
 ?>
 
