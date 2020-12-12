@@ -198,60 +198,18 @@ var_dump($hina);
 echo "<br><br>";
 
 //kuva esimene ja viimane nimi
-echo "Display the first name of array";
-echo current($hina) . "<br>";
+echo "Display the first name of array<br>";
+echo current($hina) . "<br><br>";
+echo "Display the last name of array<br>";
 echo end($hina);
 echo "<br><br>";
 
 ?>
-<?php
-//oringumootorit, et leida massiivi funktsioon, mis aitab leida, kas kasutaja otsitav nimi on olemas
-?>
 
 
 
-<?php
-//images list
-echo "Google";
-$imago = array('devlin.jpg','freeland.jpg','gabriel.jpg','pete.jpg','peterus.jpg','prentice.jpg');
-
-// display third image from array
-echo '<img src="' .$imago[2].'">';
-echo "<br><br>";
-
-// display all images from array
-foreach ($imago as $images){
-    echo '<img src="'.$images.'">';
-}
-
-echo "<br><br>";
 
 
-//bootstrap images
-
-$count = 6;
-
-echo '<div class ="container">';
-echo '<div class="row">';
-for ($i = 0; $i < count($imago); $i++) {
-
-    echo '<div class="col-sm-3"><img class="img-responsive" src="' . $imago[$i] . '"/></div>';
-
-    if ($count % 6 == 0) { // time to break line
-        echo '</div>';
-        echo '<div class="row">';
-        echo '<div class ="container">';
-    }
-
-    $count++;
-}
-
-
-echo "<br><br>";
-
-
-
-?>
 
 
 
