@@ -24,6 +24,7 @@
 <!---trapetsia pindala ja rombi ümbermüütu arvutamine-->
 
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alus_a = ($_POST['t1']);
     $alus_b = ($_POST['t2']);
@@ -33,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<br><br>Trapetsi pindala on: ".$formatted1;
 
 }
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rombi_s = ($_POST['t4']);
     $p = 4*$rombi_s;
