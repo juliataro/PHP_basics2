@@ -106,7 +106,7 @@ for($i=1;$i<$kokku1;$i++){
     echo $girls[$i].'='.$boys[$i].' ';}
 echo "<br><br>";
 
-#6.8 massividest väljasta paarid
+#6.8 massividest väljasta paarid random
 $girls = array(1=>'g1', 'g2', 'g3', 'g4', 'g5');
 shuffle($girls);
 $kokku1 = count($girls);
