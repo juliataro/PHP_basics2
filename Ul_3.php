@@ -21,7 +21,7 @@
     <input type="submit" value="Arvutada">
 </form>
 
-<!---trapetsia pindala ja rombi ümbermüütu arvutamine-->
+<!---trapetsia pindala ja rombi ümbermõõtu arvutamine-->
 
 <?php
 
