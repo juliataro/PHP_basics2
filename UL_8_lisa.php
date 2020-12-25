@@ -18,7 +18,7 @@
 
 <!---04. Väljastakse pilt sõltuvult mis aastaaeg sisestas kasutaja--->
 <?php
-
+$error = "";
 ?>
 
 <form method="post" action="?php echo ($_SERVER['PHP_SELF']);?">
@@ -68,8 +68,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 echo"<br><br>";
 ?>
 <img src="<?php season() ?>" alt="" style="width:500px;height:400px;">
-
-
 
 </body>
 </html>
