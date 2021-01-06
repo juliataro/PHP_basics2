@@ -19,7 +19,7 @@ if (!empty($_GET['otsi'])) {
     //kasutaja tekst vormist
     $otsi = $_GET['otsi'];
     //päring
-    $paring = 'SELECT * FROM albumid WHERE artist LIKE "%'.$otsi.'%"';
+    $paring = 'SELECT * FROM albumid WHERE artist LIKE "%'.$otsi.'%" || album LIKE "%'.$otsi.'%"';
 
     $valjund = mysqli_query($yhendus, $paring);
 
