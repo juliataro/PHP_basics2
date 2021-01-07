@@ -32,6 +32,9 @@ if(empty($_GET['id'])){
             echo "mingi jama";
         }
     }
+
+    mysqli_free_result($valjund);
+    mysqli_close($yhendus);
     ?>
     <h2>Albumi muutmine</h2>
     <form action="" method="post">

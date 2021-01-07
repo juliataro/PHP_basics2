@@ -59,5 +59,6 @@ while($rida = mysqli_fetch_assoc($valjund)){
          header("Location: muuda.php");
 
 }
-
+mysqli_free_result($valjund);
+mysqli_close($yhendus);
 ?>

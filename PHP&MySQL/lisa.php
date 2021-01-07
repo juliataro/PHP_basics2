@@ -16,6 +16,8 @@ if (!empty($_GET['artist']) && !empty($_GET['album']) && !empty($_GET['aasta']) 
         echo "Kirjet ei lisatud";
     }
     //ühenduse sulgemine
+
+    mysqli_free_result($valjund);
     mysqli_close($yhendus);
 }
 ?>
