@@ -190,6 +190,19 @@ if (!empty($_GET['otsi'])) {
     }
     mysqli_free_result($valjund);
     mysqli_close($yhendus);
+ <!-- Loo otsingukast, mis lubab valida, kas otsing toimub artistide või albumite veerust. -->
+
+<form method="get" action="yl2_2.php">
+    <label for="valik">Vali artist või album:</label>
+    <select id="valik" name="valik">
+        <option value="1">Artist</option>
+        <option value="2">Album</option>
+    </select>
+    <br>
+    <br>
+    Otsing <input type="text" name="otsi">
+    <input type="submit" value="otsi...">
+</form>
 */
 
 }
