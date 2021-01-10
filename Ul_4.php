@@ -172,7 +172,7 @@ $bdErr = "";
     <h4>Sisestage oma sünnipäeva n: 1980.08.31</h4>
     <div class="form-group">
         <input type="text" class="form-control" id="exampleInputEmail1" name="b1">
-        <span class="error">* <?php echo $bdErr;?></span>
+        c
     </div>
     <input type="submit" class="btn btn-primary" value="Teada">
 </form>
