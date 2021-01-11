@@ -18,21 +18,22 @@ echo 'Uudiseid lehel: '.$uudiseid_lehel.'<br>';
 // paneme limiit kui palju uudised kuvatakse lehele (paneme 4),
 // Ja kui tahaks 5 järgmist uudist saada, siis peaksin kirjutama midagi sellist.
 //$paring = "SELECT * FROM uudised LIMIT 5, 5";
-
-$paring = "SELECT * FROM uudised LIMIT 0, 2";
+/*
+$paring = "SELECT * FROM uudised";
 $vastus = mysqli_query($yhendus, $paring);
 //väljastamine
 while ($rida = mysqli_fetch_assoc($vastus)){
 //var_dump($rida) väljastame uudised;
 echo '<h3>'.$rida['pealkiri'].'</h3>';
 echo '<p>'.$rida['tekst'].'</p>';
-
+*/
 // Kasutava valib millest leheküljel soovib alustada lugema
 if (isset($_GET['page'])) {
     $leht = $_GET['page'];
 } else {
     $leht = 1;
 }
+
 //millest näitamist alustatakse
 $start = ($leht-1)*$uudiseid_lehel;
 //andmebaasist andmed
@@ -63,5 +64,5 @@ if ($lehti_kokku >= 1) {
 if ($leht<$lehti_kokku) {
     echo "<a href=\"?page=$jargmine\">Järgmine</a> ";
 }
-}
+//}
 ?>

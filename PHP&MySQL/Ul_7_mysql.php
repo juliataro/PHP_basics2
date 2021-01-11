@@ -39,6 +39,48 @@ if (isset($_POST['nimi']) && isset($_POST['email']) && isset($_POST['sonum'])) {
             } else{
                 echo "Turvakood on vale!";
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     } else {
         $error = 'Palun täida kõik väljad!';
